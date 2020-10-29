@@ -66,7 +66,9 @@ namespace fallguyslevelchances
 
         static void Main(string[] args)
         {
-            using(var db = new LiteDatabase(@"data.db"))
+            System.IO.File.Copy(@"C:\Users\coope\Downloads\FallGuyStats\data.db", @"data-temp.db", true);
+
+            using(var db = new LiteDatabase(@"data-temp.db"))
             {
                 Console.WriteLine("Please insert a numerical value 1-60.");
                 var numinput = 0;
@@ -108,7 +110,7 @@ namespace fallguyslevelchances
 
             }
          
-            
+            System.IO.File.Delete(@"data-temp.db");
         }
     }
 }

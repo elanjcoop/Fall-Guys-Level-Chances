@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\coope\\Desktop\\Python\\Fall Guys Level Chances\\fallguyslevelchances\\fallguyslevelchances.csproj": {}
+    "C:\\Users\\coope\\Desktop\\Programming Projects\\Fall Guys Level Chances\\fallguyslevelchances\\fallguyslevelchances.csproj": {}
   },
   "projects": {
-    "C:\\Users\\coope\\Desktop\\Python\\Fall Guys Level Chances\\fallguyslevelchances\\fallguyslevelchances.csproj": {
+    "C:\\Users\\coope\\Desktop\\Programming Projects\\Fall Guys Level Chances\\fallguyslevelchances\\fallguyslevelchances.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\coope\\Desktop\\Python\\Fall Guys Level Chances\\fallguyslevelchances\\fallguyslevelchances.csproj",
+        "projectUniqueName": "C:\\Users\\coope\\Desktop\\Programming Projects\\Fall Guys Level Chances\\fallguyslevelchances\\fallguyslevelchances.csproj",
         "projectName": "fallguyslevelchances",
-        "projectPath": "C:\\Users\\coope\\Desktop\\Python\\Fall Guys Level Chances\\fallguyslevelchances\\fallguyslevelchances.csproj",
+        "projectPath": "C:\\Users\\coope\\Desktop\\Programming Projects\\Fall Guys Level Chances\\fallguyslevelchances\\fallguyslevelchances.csproj",
         "packagesPath": "C:\\Users\\coope\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\coope\\Desktop\\Python\\Fall Guys Level Chances\\fallguyslevelchances\\obj\\",
+        "outputPath": "C:\\Users\\coope\\Desktop\\Programming Projects\\Fall Guys Level Chances\\fallguyslevelchances\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\coope\\AppData\\Roaming\\NuGet\\NuGet.Config"
