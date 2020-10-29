@@ -55,6 +55,7 @@ namespace fallguyslevelchances
 
             public int Position {get; set;}
             public int Tier { get; set; }
+
             public override string ToString()
             {
                 return string.Format("Id : {0}, Name : {1}, Players : {2}",
@@ -91,21 +92,29 @@ namespace fallguyslevelchances
                 // Get customer collection
 
                 var RoundDetails = db.GetCollection<RoundInfo>("RoundDetails");
-                bool hasOneresult = false;
+                var countQuery = RoundDetails.Find(x => x.Players == numinput).Count();
+                Console.WriteLine("Total Count: " + countQuery);
+                Dictionary<string, int> roundDetailsDictUnsorted = new Dictionary<string, int>();
 
                 foreach(KeyValuePair<string, string> entry in roundNames) {
                     var query = RoundDetails
-                    .Find(x => x.Players == numinput && x.Name.Contains(entry.Key));
+                        .Find(x => x.Players == numinput && x.Name.Contains(entry.Key));
                     if (query.Count() != 0) {
-                        Console.Write(entry.Value + ": ");
-                        Console.WriteLine(query.Count());
-                        hasOneresult = true;
+                        roundDetailsDictUnsorted.Add(entry.Value, query.Count());
                     }
                 }
 
-                if (hasOneresult == false) {
+                Dictionary<string, int> roundDetailsDictSorted = new Dictionary<string, int>(from entry in roundDetailsDictUnsorted orderby entry.Value descending select entry);
+                //var roundDetailsDictSorted = from entry in roundDetailsDictUnsorted orderby entry.Value descending select entry;
+
+                foreach(KeyValuePair<string, int> entry in roundDetailsDictSorted) {
+                    float percentage = (float)entry.Value / (float)countQuery * 100;
+                    Console.WriteLine(entry.Key + ": " + entry.Value + " times, " + Math.Round(percentage, 2) + "%");
+                }
+
+                if (countQuery == 0) {
                         Console.WriteLine("Sorry, no results were found for that number of players.");
-                    }
+                }
 
 
             }
