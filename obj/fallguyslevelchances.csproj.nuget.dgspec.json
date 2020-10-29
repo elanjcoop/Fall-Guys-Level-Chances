@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\coope\\Desktop\\Python\\Fall Guys Level Chances\\fallguyslevelchances\\fallguyslevelchances.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\coope\\Desktop\\Python\\Fall Guys Level Chances\\fallguyslevelchances\\fallguyslevelchances.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\coope\\Desktop\\Python\\Fall Guys Level Chances\\fallguyslevelchances\\fallguyslevelchances.csproj",
+        "projectName": "fallguyslevelchances",
+        "projectPath": "C:\\Users\\coope\\Desktop\\Python\\Fall Guys Level Chances\\fallguyslevelchances\\fallguyslevelchances.csproj",
+        "packagesPath": "C:\\Users\\coope\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\coope\\Desktop\\Python\\Fall Guys Level Chances\\fallguyslevelchances\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\coope\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
